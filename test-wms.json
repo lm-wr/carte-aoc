@@ -1,0 +1,25 @@
+{
+    "version": 8,
+    "name": "versatiles-colorful",
+     "metadata": {
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "maputnik:renderer": "mlgljs"
+                },
+     "sources": {
+                "wms-test-source": {
+                    "type"": 'raster',
+                    "tiles": ["https://ows.terrestris.de/osm/service?service=WMS&request=GetMap&version=1.1.1&layers=TOPO-WMS%2COSM-Overlay-WMS&styles=&format=image%2Fpng&transparent=true&info_format=text%2Fhtml&tiled=false&srs=EPSG:3857&bbox={bbox-epsg-3857}&width=256&height=256"],
+                    "tileSize"": 256
+                 }
+            },
+      "layers": [
+                {
+                "id": "wms-test-layer",
+                "type": "raster",
+                "source": "wms-test-source",
+                "paint": {}
+            }],
+        
+        "center": [46.928, 3.244],
+        "zoom": 5.24,
+    }
