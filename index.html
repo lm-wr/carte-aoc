@@ -24,7 +24,7 @@
     const STYLE_URL = 'versatilescolorful.json'; 
 
     // Crée et initialise l'objet carte
-    const map = new maplibre.Map({
+    const map = new maplibregl.Map({
         container: 'map', // L'ID du DIV créé ci-dessus
         style: STYLE_URL, // Charge le style défini dans votre fichier JSON
         center: [2.35, 46.5], // [Longitude, Latitude] - Centre de la France
@@ -33,7 +33,7 @@
     });
 
     // Ajoute les contrôles de zoom/dézoom (optionnel)
-    map.addControl(new maplibre.NavigationControl());
+    map.addControl(new maplibregl.NavigationControl());
 
     // Optionnel : Gère la console en cas d'erreur de chargement
     map.on('error', (e) => {
