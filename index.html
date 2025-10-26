@@ -18,9 +18,8 @@
 <div id="map"></div>
 
 <script src="https://unpkg.com/maplibre-gl@5.9.0/dist/maplibre-gl.js"></script>
-
 <script>
-    // URL de votre fichier de style JSON
+    // URL relative de votre fichier de style JSON
     const STYLE_URL = 'versatilescolorful.json'; 
 
     // Crée et initialise l'objet carte
@@ -40,7 +39,6 @@
         console.error('Erreur de chargement MapLibre:', e.error);
         // Vous verrez souvent cette erreur si le style JSON n'est pas trouvé.
     });
-
 </script>
 
 </body>
