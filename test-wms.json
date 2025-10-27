@@ -17,6 +17,7 @@
                 "id": "wms-test-layer",
                 "type": "fill",
                 "source": "wms-test-source",
+                "source-layer": "Délimitation parcellaire AOC viticole",
                 "paint": {"fill-color": "#773A2B","fill-opacity": 1}
             }],
         
