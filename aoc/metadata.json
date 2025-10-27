@@ -1,6 +1,7 @@
 {
 "name": "aop_parcellaires.mbtiles",
 "description": "aop_parcellaires.mbtiles",
+"tiles": ["https://lm-wr.github.io/carte-aoc/aoc/{z}/{x}/{y}.pbf"],
 "version": "2",
 "minzoom": "5",
 "maxzoom": "14",
