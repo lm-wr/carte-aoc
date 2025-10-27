@@ -7,7 +7,7 @@
                 },
      "sources": {
                 "wms-test-source": {
-                    "type": "raster",
+                    "type": "vector",
                     "tiles": ["hhttps://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=INAO-AOC_SYMBO_BDD_FXX_WM_WMS"],
                     "tileSize": 20
                  }
@@ -15,9 +15,9 @@
       "layers": [
                 {
                 "id": "wms-test-layer",
-                "type": "raster",
+                "type": "fill",
                 "source": "wms-test-source",
-                "paint": {}
+                "paint": {"fill-color": "#773A2B","fill-opacity": 1}
             }],
         
         "center": [46.928, 3.244],
