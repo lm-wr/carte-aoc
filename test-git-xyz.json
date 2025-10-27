@@ -8,7 +8,7 @@
     "sources": {
     "mon_fond_de_carte": {
       "type": "vector",
-      "url": "https://tiles.openfreemap.org/styles/positron/style.json"
+      "url": "https://tiles.openfreemap.org/styles/positron"
     },
     "parcelles_aoc": {
       "type": "vector",
@@ -24,7 +24,7 @@
                 "id": "aoc-remplissage",
                 "type": "fill",
                 "source": "parcelles_aoc",
-               "source-layer": "output",     
+               "source-layer": "out",     
                   "minzoom": 5,
                 "paint": {
                            "fill-color": "#880000",
