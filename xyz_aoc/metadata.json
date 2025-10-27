@@ -8,6 +8,9 @@
 "bounds": "-2.065430,41.442726,9.580078,49.468124",
 "antimeridian_adjusted_bounds": "-2.065430,41.442726,9.580078,49.468124",
 "type": "overlay",
+"tiles": [
+    "https://lm-wr.github.io/carte-aoc/xyz_aoc/{z}/{x}/{y}.pbf" 
+  ],
 "strategies": "[{\"tiny_polygons\":11763},{\"tiny_polygons\":17749},{\"tiny_polygons\":16162},{\"tiny_polygons\":14996},{\"tiny_polygons\":13677},{\"tiny_polygons\":12360},{\"tiny_polygons\":11615},{\"tiny_polygons\":9808},{\"tiny_polygons\":6729},{\"tiny_polygons\":4897},{\"tiny_polygons\":3444},{\"tiny_polygons\":2760},{\"tiny_polygons\":2151},{\"tiny_polygons\":1656}]",
 "format": "pbf",
 "generator": "tile-join v2.49.0",
