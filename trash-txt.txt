@@ -1,0 +1,69 @@
+exemple autre service : 
+tiles: ['https://ows.terrestris.de/osm/service?service=WMS&request=GetMap&version=1.1.1&layers=TOPO-WMS%2COSM-Overlay-WMS&styles=&format=image%2Fpng&transparent=true&info_format=text%2Fhtml&tiled=false&srs=EPSG:3857&bbox={bbox-epsg-3857}&width=256&height=256'],
+
+contextualWMSLegend=0&crs=EPSG:4326&dpiMode=7&featureCount=10&format=image/jpeg&layers=Aire-Parcellaire&styles&tilePixelRatio=0&url=https://data.geopf.fr/wms-r/wms?VERSION%3D1.3.0
+
+
+
+https://data.geopf.fr/wms-r/wms?SERVICE=WMS&request=GetMapUrl&format=image/png&layers=Aire-Parcellaire&styles&tilePixelRatio=0&crs=EPSG:4326&width=256&height=256
+
+
+
+https://data.geopf.fr/wmts?layer=Aire-Parcellaire&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix=16&TileCol=33609&TileRow=23326
+https://data.geopf.fr/wmts?layer=Aire-Parcellaire&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix=16&TileCol=33609&TileRow=23326
+
+layer=Aire-Parcellaire
+style=normal
+tilematrixset=PM
+Service=WMTS
+Request=GetTile
+Version=1.0.0
+Format=image%2Fpng
+TileMatrix=16
+TileCol=33609
+TileRow=23326
+
+curl 'https://data.geopf.fr/wmts?layer=Aire-Parcellaire&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix=16&TileCol=33609&TileRow=23326' \
+  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0' \
+  -H 'Accept: image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5' \
+  -H 'Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3' \
+  -H 'Accept-Encoding: gzip, deflate, br, zstd' \
+  -H 'Connection: keep-alive' \
+  -H 'Referer: https://www.geoportail.gouv.fr/' \
+  -H 'Sec-Fetch-Dest: image' \
+  -H 'Sec-Fetch-Mode: no-cors' \
+  -H 'Sec-Fetch-Site: cross-site' \
+  -H 'Priority: u=5, i' \
+  -H 'TE: trailers'
+
+Invoke-WebRequest -UseBasicParsing -Uri "https://data.geopf.fr/wmts?layer=Aire-Parcellaire&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix=16&TileCol=33609&TileRow=23326" `
+-UserAgent "Mozilla/5.0 (X11; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0" `
+-Headers @{
+"Accept" = "image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5"
+  "Accept-Language" = "fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3"
+  "Accept-Encoding" = "gzip, deflate, br, zstd"
+  "Referer" = "https://www.geoportail.gouv.fr/"
+  "Sec-Fetch-Dest" = "image"
+  "Sec-Fetch-Mode" = "no-cors"
+  "Sec-Fetch-Site" = "cross-site"
+  "Priority" = "u=5, i"
+  "TE" = "trailers"
+}
+
+await fetch("https://data.geopf.fr/wmts?layer=Aire-Parcellaire&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix=16&TileCol=33609&TileRow=23326", {
+    "credentials": "omit",
+    "headers": {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0",
+        "Accept": "image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5",
+        "Accept-Language": "fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3",
+        "Sec-Fetch-Dest": "image",
+        "Sec-Fetch-Mode": "no-cors",
+        "Sec-Fetch-Site": "cross-site",
+        "Priority": "u=5, i"
+    },
+    "referrer": "https://www.geoportail.gouv.fr/",
+    "method": "GET",
+    "mode": "cors"
+});
+
+
