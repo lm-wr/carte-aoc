@@ -8,7 +8,13 @@
     "plan_ign": {
       "type": "vector",
       "tiles": ["https://data.geopf.fr/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"]
-    }
+      },
+    "mysource": {
+      "type": "vector",
+      "tiles": ["https://lm-wr.github.io/carte-aoc/aoc-tiles/{z}/{x}/{y}.pbf"],
+      "minzoom": 0,
+      "maxzoom": 14
+    },
   },
   "sprite": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sprite/PlanIgn",
   "glyphs": "https://data.geopf.fr/annexes/ressources/vectorTiles/fonts/{fontstack}/{range}.pbf",
@@ -8936,7 +8942,16 @@
         "text-halo-color": "rgba(255, 255, 255, 0.5)",
         "text-halo-width": 4
       }
-    }
+    },
+    {
+      "id": "mes aoc",
+      "type": "fill",
+      "source": "mysource",
+      "source-layer": "aocexport",
+      "paint": {
+        "fill-color": "#0080ff",
+        "fill-opacity": 0.5
+      }
   ],
   "id": "48e6lgy"
 }
