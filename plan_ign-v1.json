@@ -8,7 +8,7 @@
     "plan_ign": {
       "type": "vector",
       "tiles": ["https://data.geopf.fr/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"]
-      },
+    },
     "mysource": {
       "type": "vector",
       "tiles": ["https://lm-wr.github.io/carte-aoc/aoc-tiles/{z}/{x}/{y}.pbf"],
@@ -8948,10 +8948,22 @@
       "type": "fill",
       "source": "mysource",
       "source-layer": "aocexport",
-      "paint": {
-        "fill-color": "#0080ff",
-        "fill-opacity": 0.6
-      }
+      "paint": {"fill-color": "rgba(177, 0, 255, 0.57)", "fill-opacity": 0.1}
+    },
+    {
+      "id": "demom-aoc",
+      "type": "symbol",
+      "source": "mysource",
+      "source-layer": "denom",
+      "minzoom": 10,
+      "maxzoom": 24,
+      "layout": {
+        "icon-size": 15,
+        "icon-text-fit": "width",
+        "text-field": "{texte}",
+        "visibility": "visible"
+      },
+      "paint": {"icon-opacity": 1}
     }
   ],
   "id": "48e6lgy"
