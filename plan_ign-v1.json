@@ -8943,28 +8943,38 @@
         "text-halo-width": 4
       }
     },
+      {
+      "id": "demom-aoc",
+      "type": "symbol",
+      "source": "mysource",
+      "source-layer": "aocexport",
+      "minzoom": 10,
+      "maxzoom": 24,
+      "filter": ["==", "denom"],
+      "layout": {
+        "visibility": "visible",
+        "text-field": "{texte}",
+        "text-size": 15,
+        "text-allow-overlap": true,
+        "text-anchor": "center",
+        "text-padding": 1,
+        "text-transform": "uppercase",
+        "text-font": ["Source Sans Pro Bold"]
+      },
+      "paint": {
+        "text-color": "#787878",
+        "text-halo-color": "rgba(255, 255, 255, 0.5)",
+        "text-halo-width": 4
+      }
+    },
     {
       "id": "mes aoc",
       "type": "fill",
       "source": "mysource",
       "source-layer": "aocexport",
       "paint": {"fill-color": "rgba(177, 0, 255, 0.57)", "fill-opacity": 0.1}
-    },
-    {
-      "id": "demom-aoc",
-      "type": "symbol",
-      "source": "mysource",
-      "source-layer": "denom",
-      "minzoom": 10,
-      "maxzoom": 24,
-      "layout": {
-        "icon-size": 15,
-        "icon-text-fit": "width",
-        "text-field": "{texte}",
-        "visibility": "visible"
-      },
-      "paint": {"icon-opacity": 1}
     }
+
   ],
   "id": "48e6lgy"
 }
