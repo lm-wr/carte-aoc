@@ -8957,11 +8957,7 @@
       "source-layer": "aocexport",
       "minzoom": 15,
       "maxzoom": 24,
-      "filter": [
-      "any",
-      ["==", ["slice", ["get", "denom"], -3], "cru"],
-      ["==", ["slice", ["get", "denom"], -3], "Cru"]
-      ],
+      "filter": ["in", "cru", ["downcase", ["get", "denom"]]],
       "layout": {
         "visibility": "visible",
         "text-field": ["get", "denom"],
