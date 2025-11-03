@@ -8951,7 +8951,7 @@
       "paint": {"fill-color": "rgba(177, 0, 255, 0.57)", "fill-opacity": 0.1}
     },
     {
-      "id": "demom-aoc-cru",
+      "id": "demom-aoc-climat-cru",
       "type": "symbol",
       "source": "mysource",
       "source-layer": "aocexport",
@@ -8977,7 +8977,33 @@
         "text-color": "#787878"
       }
     },
-
+    {
+      "id": "demom-aoc-cru",
+      "type": "symbol",
+      "source": "mysource",
+      "source-layer": "aocexport",
+      "minzoom": 15,
+      "maxzoom": 24,
+      "filter": [
+      "all",
+      ["in", "cru", ["downcase", ["get", "denom"]]],
+      ["==", ["slice",["get", "denom"],-2  ],"ru"]
+      ],
+      "layout": {
+        "visibility": "visible",
+        "text-field": ["get", "denom"],
+        "text-size": 14,
+        "text-max-width": 20,
+        "text-line-height": 1.4,
+        "text-anchor": "center",
+        "text-allow-overlap": true,
+        "text-padding": 1,
+        "text-font": ["Source Sans Pro Bold"]
+      },
+      "paint": {
+        "text-color": "#787878"
+      }
+    },
     {
       "id": "denom-aoc-cru-border",
       "type": "line",
