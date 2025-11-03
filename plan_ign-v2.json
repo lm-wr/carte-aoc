@@ -8965,7 +8965,7 @@
       "layout": {
         "visibility": "visible",
         "text-field": ["get", "denom"],
-        "text-size": 14,
+        "text-size": 15,
         "text-max-width": 20,
         "text-line-height": 1.4,
         "text-anchor": "center",
@@ -8982,8 +8982,8 @@
       "type": "symbol",
       "source": "mysource",
       "source-layer": "aocexport",
-      "minzoom": 15,
-      "maxzoom": 24,
+      "minzoom": 14,
+      "maxzoom": 15,
       "filter": [
       "all",
       ["in", "cru", ["downcase", ["get", "denom"]]],
@@ -8995,7 +8995,6 @@
         "text-size": 14,
         "text-max-width": 20,
         "text-line-height": 1.4,
-        "text-anchor": "bottom",
         "text-allow-overlap": true,
         "text-padding": 1,
         "text-font": ["Source Sans Pro Bold"]
