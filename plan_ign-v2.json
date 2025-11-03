@@ -8981,7 +8981,7 @@
       "type": "line",
       "source": "mysource",
       "source-layer": "aocexport",
-      "minzoom": 11,
+      "minzoom": 10,
       "maxzoom": 24,
       "filter": ["in", "cru", ["downcase", ["get", "denom"]]],
       "layout": {"line-join": "round", "line-cap": "round"},
