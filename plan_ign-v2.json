@@ -8995,6 +8995,7 @@
         "text-size": 14,
         "text-max-width": 20,
         "text-line-height": 1.4,
+        "text-anchor": "center",
         "text-allow-overlap": true,
         "text-padding": 1,
         "text-font": ["Source Sans Pro Bold"]
