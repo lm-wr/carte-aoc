@@ -8953,7 +8953,7 @@
       "filter": ["==", "denom"],
       "layout": {
         "visibility": "visible",
-        "text-field": "{texte}",
+        "text-field": ["get", "denom"],
         "text-size": 15,
         "text-allow-overlap": true,
         "text-anchor": "center",
