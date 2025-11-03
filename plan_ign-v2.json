@@ -8959,8 +8959,8 @@
       "maxzoom": 24,
       "filter": [
       "all",
-      ["in", "cru", ["get", "denom"]],
-      ["!=", ["slice",["get", "denom"],-3  ],"cru"]
+      ["in", "cru", ["downcase", ["get", "denom"]]],
+      ["!=", ["slice",["get", "denom"],-2  ],"ru"]
       ],
       "layout": {
         "visibility": "visible",
@@ -8968,8 +8968,7 @@
         "text-size": 14,
         "text-max-width": 20,
         "text-line-height": 1.4,
-        "text-anchor": "top",
-        "text-offset": [0, -0.6],
+        "text-anchor": "center",
         "text-allow-overlap": true,
         "text-padding": 1,
         "text-font": ["Source Sans Pro Bold"]
