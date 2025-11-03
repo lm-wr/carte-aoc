@@ -8951,7 +8951,7 @@
       "paint": {"fill-color": "rgba(177, 0, 255, 0.57)", "fill-opacity": 0.1}
     },
     {
-      "id": "demom-aoc-fincru",
+      "id": "demom-aoc-cru",
       "type": "symbol",
       "source": "mysource",
       "source-layer": "aocexport",
@@ -8966,15 +8966,12 @@
         "text-line-height": 1.4,
         "text-anchor": "top",
         "text-offset": [0, -0.6],
-        "text-allow-overlap": false,
+        "text-allow-overlap": true,
         "text-padding": 1,
-        "text-transform": "uppercase",
         "text-font": ["Source Sans Pro Bold"]
       },
       "paint": {
-        "text-color": "#787878",
-        "text-halo-color": "rgba(255, 255, 255, 0.5)",
-        "text-halo-width": 4
+        "text-color": "#787878"
       }
     },
 
