@@ -8996,7 +8996,7 @@
         "text-size": 14,
         "text-max-width": 20,
         "text-line-height": 1.4,
-        "text-variable-anchor": "bottom",
+        //"text-variable-anchor": "bottom",
         "text-offset": [2,0],
         "text-allow-overlap": true,
         "text-padding": 1,
