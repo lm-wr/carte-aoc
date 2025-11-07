@@ -14,6 +14,13 @@
       "tiles": ["https://lm-wr.github.io/carte-aoc/aoc-tiles/{z}/{x}/{y}.pbf"],
       "minzoom": 0,
       "maxzoom": 13
+    },
+    "alti": {
+      "type": "raster",
+      "tiles": [
+        "https://data.geopf.fr/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=IGNF_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW&STYLE=normal&FORMAT=image/png&TILEMATRIXSET=PM&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}"
+      ],
+      "tileSize": 256
     }
   },
   "sprite": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sprite/PlanIgn",
@@ -8942,6 +8949,12 @@
         "text-halo-color": "rgba(255, 255, 255, 0.5)",
         "text-halo-width": 4
       }
+    },
+    {
+      "id": "alti-layer",
+      "type": "raster",
+      "source": "alti",
+      "paint": {"fill-opacity": 0.1}
     },
     {
       "id": "mes aoc",
