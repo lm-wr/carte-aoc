@@ -21,6 +21,16 @@
         "https://data.geopf.fr/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=IGNF_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW&STYLE=normal&FORMAT=image/png&TRANSPARENT=TRUE&TILEMATRIXSET=PM&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}"
       ],
       "tileSize": 256
+    },
+    "maptilerhillshading": {
+      "type": "raster",
+      "tiles": [
+        "https://api.maptiler.com/tiles/hillshade/{z}/{x}/{y}.webp?key=4BTuMk4KzfSAfSk5EG4L"
+      ],
+      "minzoom": 0,
+      "maxzoom": 14,
+      "scheme": "xyz",
+      "tileSize": 512
     }
   },
   "sprite": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sprite/PlanIgn",
@@ -8954,7 +8964,13 @@
       "id": "alti-layer",
       "type": "raster",
       "source": "alti",
-      "paint": {"raster-opacity": 0.5}
+      "paint": {"raster-opacity": 0.5, "visibility": "none"}
+    },
+    {
+    "id": "map-hillshading",
+    "type": "raster",
+    "source": "maptilerhillshading",
+    "paint": {"raster-opacity": 0.3}
     },
     {
       "id": "mes aoc",
