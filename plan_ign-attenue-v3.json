@@ -8954,7 +8954,7 @@
       "id": "alti-layer",
       "type": "raster",
       "source": "alti",
-      "paint": {"fill-opacity": 0.5}
+      "paint": {}
     },
     {
       "id": "mes aoc",
