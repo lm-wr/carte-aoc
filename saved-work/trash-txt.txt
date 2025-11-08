@@ -1,3 +1,10 @@
+{
+      "id": "alti-layer",
+      "type": "raster",
+      "source": "alti",
+      "paint": {"raster-opacity": 0.5}
+    },
+
 exemple autre service : 
 tiles: ['https://ows.terrestris.de/osm/service?service=WMS&request=GetMap&version=1.1.1&layers=TOPO-WMS%2COSM-Overlay-WMS&styles=&format=image%2Fpng&transparent=true&info_format=text%2Fhtml&tiled=false&srs=EPSG:3857&bbox={bbox-epsg-3857}&width=256&height=256'],
 
