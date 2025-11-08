@@ -8961,12 +8961,6 @@
       }
     },
     {
-      "id": "alti-layer",
-      "type": "raster",
-      "source": "alti",
-      "paint": {"raster-opacity": 0.5, "visibility": "none"}
-    },
-    {
     "id": "map-hillshading",
     "type": "raster",
     "source": "maptilerhillshading",
